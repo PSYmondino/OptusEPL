@@ -1,0 +1,484 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,600);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	color: #555;
+	margin: 0;
+	padding: 0;
+
+}
+html, body {
+	height: 100%;
+}
+
+#container {
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+
+}
+
+/* Text */
+
+h1 {
+	margin: 0 0 1em 0;
+	font-size: 2.8em;
+	font-weight: 700;
+}
+
+h2 {
+	margin: 0 0 .5em 0;
+	font-size: 1.6em;
+	font-weight: 700;
+	line-height: 1.1em;
+}
+
+h3 {
+	margin: 0 0 .5em 0;
+	font-size: 1.3em;
+	font-weight: 700;
+}
+
+h4 {
+	margin: 0 0 1.5em 0;
+	font-size: 1em;
+	font-weight: 700;
+}
+
+p{
+
+	margin: 0 0 1em 0;
+}
+
+
+/*Header*/
+header {
+	background-color: #db0007;
+	height: 70px;
+}
+
+header::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+header ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+header ul li{
+	float: left;
+	width: 33%;
+	background-repeat: no-repeat;
+}
+
+header ul li a.Optus-Logo {
+	display: block;
+	height: 25px;
+	margin-top: 20px;
+	margin-left: 5px;
+	background: url('../images/logo_optus-blankPNG.png') no-repeat left; 
+	background-size: contain;
+}
+
+header ul li a.Team-Logo {
+	display: block;
+	height: 60px;
+	margin-top: 5px;
+	background: url('../images/Arsenal_FC.svg') no-repeat center center; 
+	background-size: contain;
+}
+
+header ul li a.Cast-to {
+	display: block;
+	height: 40px;
+	margin-top: 15px;
+	background: url('../images/android-cast-white.svg') no-repeat center right; 
+	background-size: contain;
+}
+
+header ul li a span {
+	display: none;
+}
+/*Next Match*/
+
+section.Next-Game {
+	padding: 10px;
+	margin: 0 5px;
+	border-bottom: 1px solid #464646;
+}
+
+section.Next-Game div::after {
+	content: '';
+	display: block;
+	clear: both
+}
+
+section.Next-Game ul{
+	list-style: none;
+	margin: 0;
+	padding: 0px;
+}
+
+section.Next-Game ul li{
+	float: left;
+	width: 33%;
+	background-repeat: no-repeat;
+}
+
+section.Next-Game ul li a.Team-Logo {
+	display: block;
+	height: 80px;
+	background: url('../images/Arsenal_FC.svg') no-repeat 20% 0; 
+	background-size: contain;
+}
+
+section.Next-Game ul li a.Premier-League-Logo {
+	display: block;
+	height: 50px;
+	margin-top: 20px;
+	background: url('../images/Premier_League.svg') no-repeat 50% 0; 
+	background-size: contain;
+}
+
+section.Next-Game ul li a.Opposing-Team-Logo{
+	display: block;
+	height: 80px;
+	background: url('../images/Chelsea_FC.svg') no-repeat 80% 0; 
+	background-size: contain;
+}
+
+section.Next-Game ul li a span {
+	display: none;
+}
+
+section.Next-Game div.All-Matches {
+	width: 100%;
+	margin: 10px 0 10px 0;
+}
+
+section.Next-Game div.All-Matches::after {
+	content: '';
+	display: block;
+	clear: both
+}	
+
+section.Next-Game div.All-Matches a {
+	float: right;
+	text-decoration: none;
+	font-size: .60em;
+	color: #555;
+}
+
+section.Next-Game div.All-Matches a:hover {
+	color: #555;
+}
+
+section.Next-Game div.All-Matches a:visited {
+	color: #555;
+}	
+
+/* Articles */
+
+section div.Article-1 {
+	position: relative;
+	margin: 10px 0 0 0;
+	height: 248px;
+	background: #fff url(../images/news-jose-mourinho-chelsea-sacking_mobile.jpg) no-repeat left bottom;
+} 
+
+section div.Article-1 a {
+	position: absolute;
+	display: block;
+	bottom: 0;
+	padding: 5px 5px;	
+	background: rgba(0, 0, 0, .5) left bottom;
+	color: #fff;
+	font-weight: 700;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+
+section div.Article-1 a:hover{
+	color: #fff;
+}
+
+section div.Article-1 a:visited{
+	color: #fff;
+}
+
+/* Main Navigation */
+#main-nav {
+	background-color: #000;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	min-height: 55px;
+	z-index: 1;
+}
+
+#main-nav::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+#main-nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#main-nav ul li {
+	float: left;
+	width: 25%;
+	text-align: center;
+	position: relative;
+	padding: 5px 0 15px 0;
+	background-repeat: no-repeat;
+}
+
+#main-nav ul li a {
+	color: #fff;
+	font-size: .65em;
+	text-decoration: none;
+}
+
+#main-nav ul li a:hover {
+	color: #fff;
+	text-decoration: none;
+	background-color: #d1d1d1;
+}
+
+#main-nav ul li a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+#main-nav ul li a span {
+	display: block;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+}
+
+#main-nav ul li a.Watch {
+	display: block;
+	height: 30px;
+	background: url('../images/0285-play3.svg') no-repeat center center;
+	background-size: contain;
+}
+
+#main-nav ul li a.Results {
+	display: block;
+	height: 30px;
+	background: url('../images/0084-calendar.svg') no-repeat center center;
+	background-size: contain;
+}
+
+#main-nav ul li a.News {
+	display: block;
+	height: 30px;
+	background: url('../images/0005-newspaper.svg') no-repeat center center;
+	background-size: contain;
+} 
+
+#main-nav ul li a.More {
+	display: block;
+	height: 30px;
+	background: url('../images/0190-menu.svg') no-repeat center center;
+	background-size: contain;
+}
+
+/* Side Bar Navigation */
+
+#side-nav {
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+#side-nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#side-nav ul li {
+	border-bottom: 1px solid #fff; 
+}
+
+#side-nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#side-nav ul li a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+#side-nav ul li a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+/*Category Page Sub-Nav*/
+
+nav#subNav {
+	background-color: #900005;
+	height: 30px;
+	position: relative;
+}
+
+nav#subNav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav#subNav ul li{
+	float: left;
+	text-align: center;
+	height: 100%;
+}
+
+nav#subNav ul li a{
+	text-decoration: none;
+	display: block;
+	padding: 3px 8px;
+	color: #fff;
+	font-size: 1em;
+}
+
+nav#subNav ul li a:hover{
+	color: #fff;
+	font-size: 1em;
+}
+
+nav#subNav ul li a:visited{
+	color: #fff;
+	font-size: 1em;
+}
+
+nav#subNav ul li:first-child a {
+	font-weight: bold;
+}
+
+/*Cat Page Upcoming Matches */
+
+section article.calendar-game {
+	background-color: #fff;
+	width: 100%;
+}
+
+section article.calendar-game p {
+	display: block;
+	font-size: 0.7em;
+	line-height: 8px;
+	text-align: center;
+	width: 90%;
+}
+
+section article.calendar-game ul {
+	list-style: none;	
+	margin: 0;
+	padding: 0;
+}
+
+section article.calendar-game ul li {
+	float: left;
+	width: 30%;
+	text-align: center;
+	background-repeat: no-repeat;
+}
+
+section article.calendar-game ul::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+section article.calendar-game h4 {
+	font-size: 0.5em;
+	display: block;
+	margin: 0px;
+	background-color: #bfbfbf;
+	padding: 2px 10px;
+}
+
+section article.calendar-game ul li a.Competitor1 {
+	display: block;
+	height: 50px;
+	margin: 20px 15px;
+	background: url('../images/Arsenal_FC.svg') no-repeat center center;
+	background-size: contain;
+}
+
+section article.calendar-game ul li a.Competitor2 {
+	display: block;
+	height: 50px;
+	margin: 20px 15px;
+	background: url('../images/Chelsea_FC.svg') no-repeat center center;
+	background-size: contain;
+}
+
+section article.calendar-game ul li a.btn {
+	display: block;
+	margin-top: 30px;
+	padding: 5px;
+	height: 100%;
+	background-color: #fff;
+	text-decoration: none;
+	color: #555;
+	border: solid 1px #bfbfbf;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* future proofing */
+	-khtml-border-radius: 10px;
+}
+
+section article.calendar-game ul li:last-child {
+	display: block;
+	width: 10%;
+	margin-top: 28px;
+	text-decoration: none;
+}
+
+section article.calendar-game ul li:last-child a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+section article.calendar-game ul li:last-child a:visited {
+	color: #555;
+}
+
+section article.calendar-game ul li a.btn:visited{
+	background-color: #fff;
+}
+
+section article.calendar-game ul li a.btn:hover{
+	background-color: #db0007;
+}
+
+section article.calendar-game ul li a span {
+	display: none;
+}
+
